@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import { cn } from '../lib/utils';
 import { motion } from 'framer-motion';
@@ -35,3 +36,15 @@ const Button = React.forwardRef(({ className, variant = 'primary', size = 'defau
 Button.displayName = 'Button';
 
 export default Button;
+=======
+const Button = ({ text }) => {
+  return (
+    <button className="app-btn">
+      {text}
+    </button>
+  )
+}
+
+export default Button
+
+>>>>>>> 4ae75b573317e471b48c595de181d66683f07be4
