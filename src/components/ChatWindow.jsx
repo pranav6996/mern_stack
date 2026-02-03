@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useState, useRef, useEffect } from 'react';
 import { useChat } from '../context/ChatContext';
 import { useAuth } from '../context/AuthContext';
@@ -108,27 +107,3 @@ const ChatWindow = () => {
 };
 
 export default ChatWindow;
-=======
-export default function ChatWindow({ selectedChat, onAddChat }) {
-  return (
-    <div className="chat-window">
-      {!selectedChat ? (
-        <div className="empty-chat">
-          Select or create a chat
-        </div>
-      ) : (
-        <>
-          <h3>{selectedChat.name}</h3>
-          <div className="messages">Chat messages...</div>
-          <input placeholder="Type a message..." />
-        </>
-      )}
-
-      {/* ADD CHAT BUTTON */}
-      <button className="chat-add-btn" onClick={onAddChat}>
-        + New Chat
-      </button>
-    </div>
-  );
-}
->>>>>>> 4ae75b573317e471b48c595de181d66683f07be4
